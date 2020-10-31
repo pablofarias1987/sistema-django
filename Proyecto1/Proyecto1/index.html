@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+    {% include "barra.html" %}
+    <p>Hola alumnos</p>
+    <p>El nombre del profesor es: {{nombre_persona.upper}} {{apellido_persona.upper}}</p>
+    <p>Estamos viendo el tema de las plantillas el dia: {{momento_actual}}</p>
+    <p><strong>Temas del curso:</strong></p>
+    <P>
+        <ul>
+        {% if temas %}    
+            {% for elTema in temas %}
+
+                <li>{{elTema}}</li>
+            
+            {% endfor %}
+
+        {% else %}
+            <p>No hay elementos que mostrar</p>
+        {% endif %}
+        </ul>
+
+    </P>
+</body>
+</html>
