@@ -12,6 +12,12 @@
 {% block content %}
 <body>
     <div class="container">
+
+        <div style="float:right;">
+        
+            <p style="color: white;">Total:{{importe_total_carro}} Clp</p>
+
+        </div>
     <div class="row">
     {% for producto in productos %}
         
@@ -28,6 +34,14 @@
             <p class="card-text">{{producto.precio}}&nbsp;Clp</p>
 
         </div>
+
+        <div class="card-footer text-center">
+
+            <a href="#" class="btn btn-success">Agregar  al carro</a>
+
+        </div>
+
+
     
         </div>
 
